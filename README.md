@@ -19,39 +19,4 @@ Her kommer forskellige øvelser til tysk B
 <BR><BR></FORM>
     <FORM name=resultat action="">
     <P><INPUT style="FONT: 20px Wingdings; COLOR: green" onclick=Rettelse() type=button value=" ü " name=check> <SPAN id=smiley style="BORDER-RIGHT: 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: 1px solid; PADDING-LEFT: 3px; BACKGROUND: #fffff0; VISIBILITY: hidden; PADDING-BOTTOM: 3px; BORDER-LEFT: 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: 1px solid; HEIGHT: 28px"></SPAN></P></FORM></TD></TR></TBODY></TABLE>
-    <SCRIPT type=text/javascript>
-    var PPoint=0;
-    var total="10"
-    function Rettelse() {
-    var e=0;
-    PPoint=0;
-    var tegn = document.getElementsByTagName("span");
-    var inputs = document.getElementsByTagName("input");
-       for (var i=0;i<inputs.length;i++)
-            if ( inputs.item(i).type=="text")
-            {
-                      if (trim(inputs.item(i).value)==inputs.item(i-1).value)
-                    {
-                    (tegn.item(e)).style.fontFamily="Wingdings";
-                    (tegn.item(e)).style.fontSize="20";
-                    (tegn.item(e)).style.color="#008000";
-                    (tegn.item(e)).innerHTML="\u00FC";
-                    PPoint++;
-                    }
-                else if (inputs.item(i).value != "")
-                    {
-                    (tegn.item(e)).style.fontFamily="Wingdings";
-                    (tegn.item(e)).style.fontSize="20";
-                    (tegn.item(e)).style.color="#FF0000";
-                    inputs.item(i).value="";(tegn.item(e)).innerHTML="\u00FB";
-                    };
-    e++;
-     }
-    PPoint=Math.round(100*PPoint/total)
-    if (PPoint==100)	    	
-     sml = "J"
-    else  sml = "L"
-    document.getElementById("smiley").style.visibility="visible";
-    document.getElementById("smiley").innerHTML=  "<font face='Wingdings' size='5'>" + sml + "<\/font>";
-    }
-</BODY>
+    </BODY>
