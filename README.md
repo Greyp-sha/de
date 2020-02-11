@@ -51,8 +51,8 @@ Her kommer forskellige øvelser til tysk B
     document.getElementById("smiley").style.visibility="visible";
     document.getElementById("smiley").innerHTML=  "<font face='Wingdings' size='5'>" + sml + "<\/font>";
     }
-    
     function trim(s){
-     return s.replace(/^\s+/,'').replace(/\s+$/,'');
+    return s.replace(/^\s+/,'').replace(/\s+$/,'');
     }
     </SCRIPT>
+    </BODY>
